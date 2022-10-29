@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- 웹페이지 보이지는 않지만, 필요한 설정을 해두는 곳이에요.
+             우리가 집을 위해 미리 생각 해놓은 것을 적어두는 곳이라고 할 수 있죠!-->
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta property="og:title" content="nature profile" />
+        <meta property="og:description" content="심자연 서비스기획/ios개발자" />
+        <meta property="og:image" content="Team_Nature.png" />
+        <title> nature profile </title>
+        
+            <!-- 이름을 따로 지정해준 태그에 css를 적용할 때에는 .이름 {} 형식으로,
+                 이름을 지정해줄 필요가 없는 body와 같이 하나만 존재하는 태그는 .없이 사용 
+                
+                간격은 가능한 맨 마지막에 맞추도록
+                이름 > a 로 하면 해당 이름 태그 내에 있는 모든 a태그에 같은 값이 적용됨-->
+
+                <!-- 
+                    1. 왜 px를 사용할까?
+                    2. backgrond-size에서 certain, cover, auto의 차이는?  
+                    3. div 여백에서 auto는 무슨 역할? 
+                    4. display flex란? -->
+        <style>
+            @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+            * {
+                font-family: "Pretendard",serif;
+            }
+            body {
+                background-color: lightpink;
+            }
+            .profile {
+                width: 100px;
+                height: 100px;
+                border-radius: 100%;
+                border : 2px solid white;
+                
+                background-image: url('Team_Nature.png');
+                background-position: center;
+                background-size: contain;
+
+                margin-top: 30px;
+            }
+            .name {
+                color: white;
+                font-size: 20px;
+
+                margin-top: 30px;
+                margin-bottom: 10px;
+            }
+            .job {
+                color: white;
+                font-size: 14px;
+
+                margin-top: 0px;
+                margin-bottom: 30px;
+            }
+            .profile_div {
+                width: 300px;
+                margin: 30px auto 0px auto;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .profile_div > a {
+                width: 300px;
+                height: 50px;
+                background-color: white;
+                border-radius: 8px;
+
+                margin-bottom: 10px;
+                font-size: 14px;
+                font-weight: bold;
+                color: black;
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                text-decoration: none;
+
+                box-shadow: 3px 3px 5px 0px gray;
+            }
+            .profile_div > a:hover {
+               background-color: #f2f2f2;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- 우리가 웹페이지에서 볼 수 있는 부분을 세팅하는 곳이죠.
+             우리가 집에서 눈에 볼 수 있는 집 구조들을 설정하는 곳이죠.
+            <div>나는 구역을 나누죠</div>
+             <p>나는 문단이에요</p>
+             <h1 class="mytitle">h1은 제목이에요.</h1>
+             <h2>h2는 소제목입니다.</h2>
+             <h3>h3~h6 h 뒷 숫자가 커질수록 글자 크기는 작아져요. </h3>
+             <a href="https://spartacodingclub.kr/"> 하이퍼링크 </a>
+             <img src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/free/logo_teamsparta.png" width="300"/>  
+             <input type="text">
+             <button>버튼입니다.</button>
+            -->
+
+            <div class="profile_div">
+                <div class="profile"></div>
+                <h1 class="name">Nature</h1>
+                <p class="job">서비스 기획/ios 개발자</p>
+
+
+                <a target="_blank" href="https://github.com/simjayeon">GitHub</a>
+                <a target="_blank" href="https://velog.io/@simjayeon">Velog</a>
+                <a target="_blank" href="https://brunch.co.kr/@30b8698ec7be4b2">Brunch</a>
+            </div>
+            
+            
+             
+
+             
+    </body>
+</html>
